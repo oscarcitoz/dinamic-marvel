@@ -9,6 +9,7 @@ class OrchestratorResponse {
     val code: Int = 0
     val status: String = ""
     val data: DataOrchestrator? = null
+    var name: String = ""
 }
 
 @Serdeable
@@ -18,5 +19,5 @@ class DataOrchestrator {
     val limit: Int = 0
     val total: Int = 0
     val count: Int = 0
-    val results: List<Map<String?, Any?>> = listOf()
+    var results: List<Map<String?, Any?>> = listOf()
 }

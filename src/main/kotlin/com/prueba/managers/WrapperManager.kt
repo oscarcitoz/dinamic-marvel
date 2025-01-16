@@ -7,7 +7,7 @@ import io.micronaut.core.annotation.Order
 import jakarta.inject.Singleton
 
 @Singleton
-@Order(2)
+@Order(3)
 class WrapperManager : ManagerInterface {
     override fun apply(container: OrchestratorContainer) {
         val api = container.api!!

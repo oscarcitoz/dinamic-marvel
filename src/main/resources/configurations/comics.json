@@ -7,6 +7,10 @@
         "type": "string"
       },
       {
+        "key": "upc",
+        "type": "string"
+      },
+      {
         "key": "noVariants",
         "type": "boolean"
       },

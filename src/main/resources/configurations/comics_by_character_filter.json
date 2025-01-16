@@ -1,0 +1,16 @@
+{
+  "configuration": {
+    "url": "/v1/public/characters/{characterId}/comics",
+    "parameters": [
+      {
+        "key": "characterId",
+        "type": "int",
+        "from": "characters->$.data.results[0].id",
+        "required": true
+      }
+    ]
+  },
+  "depends_on": [
+    "characters"
+  ]
+}

@@ -8,7 +8,7 @@ import io.micronaut.http.exceptions.HttpStatusException
 import jakarta.inject.Singleton
 
 @Singleton
-@Order(1)
+@Order(2)
 class ValidatorManager : ManagerInterface {
     companion object {
         private const val BOOLEAN = "boolean"

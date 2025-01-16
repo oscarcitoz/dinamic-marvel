@@ -6,6 +6,7 @@ import com.prueba.requests.OrchestratorRequest
 class OrchestratorContainer {
     var orchestratorRequest: OrchestratorRequest? = null
     var api: Api? = null
+    var dependsApi: List<Api>? = null
     var wrapperForRequest: WrapperRequest? = null
 }
 

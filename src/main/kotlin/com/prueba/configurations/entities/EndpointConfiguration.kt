@@ -23,6 +23,7 @@ class EndpointConfiguration() {
             )
 
         val configuration = ObjectMapper().readValue(inputStream, object : TypeReference<Api>() {})
+        configuration.name = name
         cachedConfigurations[name] = configuration
 
         return configuration

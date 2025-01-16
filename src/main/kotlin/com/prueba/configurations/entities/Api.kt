@@ -7,7 +7,10 @@ import io.micronaut.serde.annotation.Serdeable
 @Serdeable
 @Introspected
 class Api {
+    var name: String = ""
     val configuration: Configuration = Configuration()
+    @field:JsonProperty("depends_on")
+    val dependsOn: List<String>? = null
 }
 
 @Serdeable
@@ -28,4 +31,5 @@ class Parameter {
     @field:JsonProperty("possible_values")
     val possibleValues: List<String>? = null
     val required: Boolean? = null
+    val from: String? = null
 }

@@ -10,3 +10,17 @@ fun Map<String, String>.generateCacheKey(): String {
 
     return crc.value.toString()
 }
+
+fun Map<String?, Any?>.getValueByPath(path: String): String {
+    val keys = path.split(".")
+    var current: Any? = this
+
+    for (key in keys) {
+        current = if (current is Map<*, *>) {
+            current[key]
+        } else {
+            return "0"
+        }
+    }
+    return current.toString()
+}

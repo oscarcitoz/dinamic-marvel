@@ -38,6 +38,8 @@ dependencies {
     implementation("io.micronaut.redis:micronaut-redis-lettuce")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.15.2")
     implementation("com.vladmihalcea:hibernate-types-60:2.21.1")
+    implementation("com.jayway.jsonpath:json-path:2.8.0")
+
 
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
     runtimeOnly("org.postgresql:postgresql")

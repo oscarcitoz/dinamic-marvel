@@ -1,0 +1,11 @@
+{
+  "configuration": {
+    "url": "/v1/public/characters/{characterId}/events",
+    "parameters": [
+      {
+        "key": "characterId",
+        "type": "int",
+        "required": true
+      }]
+  }
+}

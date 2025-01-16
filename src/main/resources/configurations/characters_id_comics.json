@@ -1,0 +1,11 @@
+{
+  "configuration": {
+    "url": "/v1/public/characters/{characterId}/comics",
+    "parameters": [
+      {
+        "key": "characterId",
+        "type": "int",
+        "required": true
+      }]
+  }
+}

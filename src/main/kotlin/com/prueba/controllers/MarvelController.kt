@@ -27,4 +27,14 @@ class MarvelController(
     fun orchestrator(@Valid @Body orchestratorRequest: OrchestratorRequest): Mono<OrchestratorResponse> {
         return this.orchestratorServiceInterface.resolve(orchestratorRequest)
     }
+
+    @Post("/orchestrator-recursive")
+    fun orchestrator(@Valid @Body orchestratorRequests: List<OrchestratorRequest>): Mono<List<OrchestratorResponse>> {
+        return this.orchestratorServiceInterface.resolveRecursive(orchestratorRequests)
+    }
+
+    @Post("/orchestrator-with-dependency")
+    fun orchestratorWithDependency(@Valid @Body orchestratorRequest: OrchestratorRequest): Mono<OrchestratorResponse> {
+        return this.orchestratorServiceInterface.resolveWithDependency(orchestratorRequest)
+    }
 }
