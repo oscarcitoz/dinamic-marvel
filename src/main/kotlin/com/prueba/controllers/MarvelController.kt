@@ -1,6 +1,5 @@
 package com.prueba.controllers
 
-import com.prueba.externals.marvel.responses.BaseResponse
 import com.prueba.externals.marvel.responses.ComicResponse
 import com.prueba.externals.marvel.responses.OrchestratorResponse
 import com.prueba.requests.OrchestratorRequest
