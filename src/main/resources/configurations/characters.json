@@ -1,0 +1,7 @@
+{
+  "configuration": {
+    "url": "/v1/public/characters",
+    "parameters": [
+    ]
+  }
+}

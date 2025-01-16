@@ -1,0 +1,11 @@
+{
+  "configuration": {
+    "url": "/v1/public/characters/{id}",
+    "parameters": [
+      {
+        "key": "id",
+        "type": "int",
+        "required": true
+      }]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "configuration": {
+    "url": "/v1/public/comics",
+    "parameters": [
+      {
+        "key": "format",
+        "type": "string"
+      },
+      {
+        "key": "noVariants",
+        "type": "boolean"
+      },
+      {
+        "key": "dateRange",
+        "type": "int"
+      },
+      {
+        "key": "orderBy",
+        "type": "string",
+        "possible_values": [
+          "focDate",
+          "onsaleDate",
+          "title",
+          "issueNumber"
+        ]
+      }
+    ]
+  }
+}
